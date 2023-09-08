@@ -1,0 +1,24 @@
+
+<h1>Atualize seu Livro</h1>
+<form action="/books/updatebook" method="post" class="form">
+
+    <input type="hidden" name="id" value="{{book.id}}">
+
+    <div class="form_control">
+        <label for="">Novo Título</label>
+        <input type="text" name="title" value="{{book.title}}" >
+    </div>
+
+    <div class="form_control">
+        <label for="">Nova quantidade de Paginas</label>
+        <input type="text" name="nm_paginas"  value="{{book.nm_paginas}}" >
+    </div>
+
+    <div class="form_control">
+        
+        <input type="submit" value="Atualizar">
+    </div>
+
+    <a href="/books">Visualizar Livros</a>
+</form>
+
